@@ -1,5 +1,4 @@
 // housed in folder [1-eventloop] is not going to work, only works as app.js in [NODECLASS] folder
-
 const { readFile } = require('fs')
 
 console.log('started a first task')

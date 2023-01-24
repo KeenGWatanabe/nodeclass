@@ -5,7 +5,6 @@
   "main": "1-intro.js",
   "scripts": {
     "start": "node 13-packagejson.js",
-    
     "dev": "nodemon app.js"
   },
   "author": "",
