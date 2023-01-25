@@ -5,7 +5,7 @@ const customEmitter = new EventEmitter()
 customerEmitter.on('response',(name, id) => {
   console.log(`data received user ${name} with id:${id}`)
 })
-customeEmitter.on('response', () => [
-  console.log(`some other logic here `)
+customeEmitter.emit('response', () => [
+  console.log(`some other logic here`)
 ])
 customEmitter.emit('response', 'john', 34)
