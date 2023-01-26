@@ -1,11 +1,7 @@
-const EventEmitter = require('events')
+const {createReadStream} = require('fs');
 
-const customEmitter = new EventEmitter()
+const stream = createReadStream('./content/big.txt')
 
-customerEmitter.on('response',(name, id) => {
-  console.log(`data received user ${name} with id:${id}`)
+stream.on('data', (result) => {
+  console.log(result)
 })
-customeEmitter.on('response', () => [
-  console.log(`some other logic here `)
-])
-customEmitter.emit('response', 'john', 34)
